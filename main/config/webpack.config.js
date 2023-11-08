@@ -18,8 +18,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
-    alias: {
-      '@/index': path.resolve(process.cwd(), 'core/dist/a2n.core.js')
+    alias: config.alias || {
+      '@': path.resolve(process.cwd(), 'src')
     }
   },
   output: {

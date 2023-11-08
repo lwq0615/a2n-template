@@ -25,7 +25,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
-    alias: {
+    alias: config.alias || {
       '@': path.resolve(process.cwd(), 'core/src')
     }
   },
